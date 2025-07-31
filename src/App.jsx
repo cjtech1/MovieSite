@@ -47,6 +47,7 @@ const App = () => {
       }
 
       setMovieList(data.results || []);
+      console.log(data.results);
       if (query && data.results.length > 0) {
         await updateSearchCount(query, data.results[0]);
       }
